@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Script that displays current directory in a list format
+FILES="*"
+for i in $FILES
+do
+	echo "$i" | cut -d "-" -f2
+done

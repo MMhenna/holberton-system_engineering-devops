@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#This is a fizzbuzz script up to 100
+i=1
+END=100
+while [ $i -le $END ]
+do
+	if ((i % 15 == 0)); then
+		echo "FizzBuzz"
+	elif ((i % 3 == 0)); then
+		echo "Fizz"
+	elif ((i % 5 == 0)); then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+	((i++))	
+done

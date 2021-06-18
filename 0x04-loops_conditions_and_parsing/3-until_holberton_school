@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script prints Holberton School 10 times using until
+SCHOOL_NAME="Holberton School"
+COUNTER=10
+until [ $COUNTER -lt 1 ]
+do
+	echo "$SCHOOL_NAME"
+	((COUNTER--))
+done

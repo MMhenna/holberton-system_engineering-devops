@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Prints Holberton School, good or bad luck?
+SCHOOL_NAME="Holberton School"
+BAD="bad luck"
+GOOD="good luck"
+i=1
+END=10
+while [ $i -le $END ]
+do
+	if [ $i == 4 ]; then
+		echo "$BAD"
+	elif [ $i == 8 ]; then
+		echo "$GOOD" 
+	else
+		echo "$SCHOOL_NAME"
+	fi
+	((i++))
+done

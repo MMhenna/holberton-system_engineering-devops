@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#This script prints out Holberton School 9 times then Hi, then Holberton School
+SCHOOL_NAME="Holberton School"
+COUNTER=0
+END=11
+CHANGE=9
+MESSAGE="Hi"
+while [ $COUNTER -lt $END ]
+do
+	if [ $COUNTER = $CHANGE ]
+	then
+		echo "$MESSAGE"
+	else
+		echo "$SCHOOL_NAME"
+	fi	
+	((COUNTER++))
+done
