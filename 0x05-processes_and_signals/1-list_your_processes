@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Lists out all the current processes, all users, user-oriented format and process hierarychy
+ps -auxf

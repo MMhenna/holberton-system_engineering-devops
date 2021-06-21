@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#catches a signal interupt SIGTERM
+trap "echo I am invincible!!!" SIGTERM
+MESSAGE="To infinity and beyond"
+while ((1))
+do 
+	echo "$MESSAGE"
+	sleep 2
+done

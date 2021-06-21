@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Looks for just the bash named processes
+ps auxH | grep bash
+# shellcheck disable=SC2009
