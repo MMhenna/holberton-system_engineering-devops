@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Setting up hostname in nginx headers
-sudo apt-get install nginx -y
-sed -i "15i\add_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
-sudo service nginx restart
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo sed -i "46i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+sudo service nginx start
