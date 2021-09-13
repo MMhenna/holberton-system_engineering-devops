@@ -31,8 +31,9 @@ def tasks_done(id):
     todos = {"{}".format(id): task_list}
 
     file_name = "{}.json".format(id)
-    with open (file_name, "a") as fd:
+    with open(file_name, "a") as fd:
         json.dump(todos, fd)
+
 
 if __name__ == "__main__":
     tasks_done(sys.argv[1])
