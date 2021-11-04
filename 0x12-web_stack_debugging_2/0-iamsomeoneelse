@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# Switching users
-sudo -u "$1" bash -c whoami
+# a Bash script that accepts one argument
+sudo --user "$1" whoami
